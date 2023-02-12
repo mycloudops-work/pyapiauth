@@ -54,6 +54,175 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "backend-flask-api-auth",
+			"item": [
+				{
+					"name": "public-api-get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/public",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"public"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "private-api-get",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "audience",
+									"value": {
+										"266b49c2-7951-4295-b471-a4effa5df933": "http://localhost:5000/api"
+									},
+									"type": "any"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{client_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-3ejsz1euy0hu1y7v.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "pyapiauth-backend-token",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/private",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"private"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "private-scope-api-get",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "{{scope_client_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{scope_client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read:messages",
+									"type": "string"
+								},
+								{
+									"key": "audience",
+									"value": {
+										"266b49c2-7951-4295-b471-a4effa5df933": "http://localhost:5000/api"
+									},
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-3ejsz1euy0hu1y7v.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "pyapiauth-backend-token",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/private-scoped",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"private-scoped"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
