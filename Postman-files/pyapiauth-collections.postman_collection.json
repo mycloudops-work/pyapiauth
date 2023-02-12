@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "c851791f-7c5e-4ea7-9510-4bc20130a12a",
+		"name": "pyapiauth-collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25214273"
+	},
+	"item": [
+		{
+			"name": "simple-flask-api-calls",
+			"item": [
+				{
+					"name": "api-get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
