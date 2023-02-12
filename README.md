@@ -2,11 +2,10 @@
 Python API build with Oauth2 security
 
 ## Setup
-Virtual env: ./venv_pyapiauth
-.gitignore:
+- Virtual env: ./venv_pyapiauth
+- .gitignore:
     - venv_*
-requirements.txt - add all the libraries to requirements files
-
+- requirements.txt - add all the libraries to requirements files
 
 # Step 1: Build Flash Python API
 
